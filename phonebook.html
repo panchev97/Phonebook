@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phonebook</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="Scripts/Application.js"></script>
+    <script src="Scripts/CreateContact.js"></script>
+    <script src="Scripts/DeleteContact.js"></script>
+    <script src="Scripts/DisplayContacts.js"></script>
+    <script src="Scripts/DisplayError.js"></script>
+    <script src="Scripts/LoadContacts.js"></script>
+    <link rel="stylesheet" href="Styles/Phonebook.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body onload="startApp(); zoom();">
+<center>
+    <div id="text">
+        <h1 style="color:#166796;">Phonebook</h1>
+        <hr class="style">
+        <button type="button" class="btn btn-default" id="btnLoad">Load Contacts</button>
+        <br>
+        <br>
+        <ul class="list-group" id="phonebook">
+        </ul>
+        <hr class="style">
+
+        <h1 style="color:#166796;">Create New Contact</h1>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="txtPerson">Name</label>
+                <input type="text" class="form-control" id="txtPerson" placeholder="Example: Ivan Ivanov">
+            </div>
+            <div class="form-group">
+                <label for="txtPhone">Phone</label>
+                <input type="text" class="form-control" id="txtPhone" placeholder="Example: +359 876 234 753">
+            </div>
+            <button type="submit" class="btn btn-primary" id="btnCreate">Create Contact</button>
+        </form>
+    </div>
+    <hr class="style">
+</center>
+</body>
+</html>
